@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY CAKE (Yusuf) — Qandolatxona & Qahvaxona | 24/7 Kun-u tun Toshkent</title>
+  <meta name="description" content="MY CAKE (Yusuf) Toshkent - Kun-u tun ochiq qandolatxona va qahvaxona. Bento tortlar, merenga ruletlari, maxsus qahvalar va buyurtma shirinliklar. +998 97 448 77 66">
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Logo Base64 Fallback Data -->
+  <script src="assets/logo-data.js"></script>
+
+  <!-- Font Awesome Icons (Cloudflare + jsDelivr fallback) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              darkest: '#031c15',
+              dark: '#06261d',
+              card: '#0c3429',
+              lightcard: '#124335',
+              emerald: '#00754a',
+              bright: '#00b074',
+              accent: '#d4af37',
+              cream: '#f9f6f0',
+              creamdark: '#e8dfd3'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            script: ['"Caveat"', 'cursive']
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-18px) rotate(4deg)' },
+            },
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' }
+            },
+            pulseSubtle: {
+              '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+              '50%': { opacity: '0.85', transform: 'scale(1.04)' }
+            }
+          },
+          animation: {
+            float: 'float 5s ease-in-out infinite',
+            floatSlow: 'floatSlow 7s ease-in-out infinite',
+            marquee: 'marquee 22s linear infinite',
+            pulseSubtle: 'pulseSubtle 3s ease-in-out infinite'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #031c15;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #00754a;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00b074;
+    }
+
+    .diagonal-tape {
+      transform: rotate(-2deg);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+    .diagonal-tape-reverse {
+      transform: rotate(2deg);
+    }
+
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .watermark-text {
+      user-select: none;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-[#031c15] text-[#f9f6f0] font-sans antialiased selection:bg-brand-bright selection:text-brand-darkest overflow-x-hidden">
+
+  <!-- FRUIT PARTICLES CANVAS OVERLAY (Left-to-right with center swirl, below all UI) -->
+  <canvas id="leavesWindCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+  <!-- TOP 24/7 ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-brand-emerald via-emerald-600 to-brand-emerald text-white text-xs md:text-sm font-semibold py-2 px-4 text-center tracking-wider flex items-center justify-center gap-3 relative z-50 shadow-md">
+    <span class="inline-flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-200 animate-ping"></span>
+      <span class="w-2 h-2 rounded-full bg-white"></span>
+      <strong>KUN-U TUN OCHIQ</strong> (24/7) — Dushanba - Yakshanba tun-u kun xizmatingizda!
+    </span>
+    <span class="hidden md:inline text-emerald-200">|</span>
+    <a href="tel:+998974487766" class="hidden md:inline-flex items-center gap-1 hover:underline">
+      <i class="fa-solid fa-phone text-xs"></i> +998 97 448 77 66
+    </a>
+    <span class="hidden lg:inline text-emerald-200">|</span>
+    <a href="https://maps.google.com/maps?q=41.301701,69.210699&ll=41.301701,69.210699&z=16" target="_blank" rel="noopener noreferrer" class="hidden lg:inline-flex items-center gap-1.5 hover:underline text-amber-200">
+      <i class="fa-solid fa-location-dot text-xs text-amber-300"></i> Toshkent (Google Xarita)
+    </a>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-[#031c15]/90 backdrop-blur-md border-b border-emerald-900/40 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-14 h-14 rounded-full p-0.5 shadow-xl group-hover:scale-105 transition-transform overflow-hidden border-2 border-amber-400/60 bg-[#06261d]">
+          <img src="assets/images/logo.jpg" onerror="if(window.MYCAKE_LOGO_B64){this.src=window.MYCAKE_LOGO_B64;}" alt="MY CAKE YUSUF Logo" class="w-full h-full object-cover rounded-full mycake-logo-img">
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-wider text-white flex items-center gap-1">
+            MY <span class="text-brand-bright">CAKE</span>
+          </span>
+          <span class="block text-[10px] uppercase tracking-widest text-amber-300/90 -mt-0.5 font-semibold">
+            YUSUF • EST. 2022
+          </span>
+        </div>
+      </a>
+
+      <!-- Center Pill Navigation Menu (Exact design from Starbucks mockup) -->
+      <nav class="hidden md:flex items-center bg-white/10 backdrop-blur-lg px-2 py-1.5 rounded-full border border-white/20 shadow-inner">
+        <a href="#hero" class="px-5 py-2 text-sm font-semibold rounded-full text-white bg-brand-emerald shadow-sm transition hover:bg-emerald-600">Asosiy</a>
+        <a href="#menu" class="px-5 py-2 text-sm font-medium rounded-full text-emerald-100 hover:text-white hover:bg-white/10 transition">Menyu</a>
+        <a href="#popular" class="px-5 py-2 text-sm font-medium rounded-full text-emerald-100 hover:text-white hover:bg-white/10 transition">Ommabop</a>
+        <a href="#branches" class="px-5 py-2 text-sm font-medium rounded-full text-emerald-100 hover:text-white hover:bg-white/10 transition">Filiallar</a>
+        <a href="#contact" class="px-5 py-2 text-sm font-medium rounded-full text-emerald-100 hover:text-white hover:bg-white/10 transition">Aloqa</a>
+      </nav>
+
+      <!-- Right Header Actions (Phone & Telegram & Cart) -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <a href="https://t.me/mycakeuzb" target="_blank" rel="noopener noreferrer" class="hidden lg:flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#0088cc]/20 border border-[#0088cc]/50 text-xs font-bold text-white hover:bg-[#0088cc] transition shadow">
+          <i class="fa-brands fa-telegram text-sm text-[#0088cc]"></i>
+          <span>@mycakeuzb</span>
+        </a>
+        <a href="tel:+998974487766" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-emerald-200 hover:bg-white/15 hover:text-white transition">
+          <i class="fa-solid fa-phone text-brand-bright"></i>
+          <span>+998 97 448 77 66</span>
+        </a>
+
+        <!-- Cart Trigger Button -->
+        <button id="openCartBtn" class="relative w-11 h-11 rounded-full bg-brand-emerald hover:bg-brand-bright text-white flex items-center justify-center transition-transform hover:scale-105 shadow-lg" aria-label="Savat">
+          <i class="fa-solid fa-bag-shopping text-base"></i>
+          <span id="cartCountBadge" class="absolute -top-1 -right-1 bg-amber-400 text-brand-darkest font-extrabold text-[11px] w-5 h-5 rounded-full flex items-center justify-center shadow">
+            0
+          </span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobileMenuBtn" class="md:hidden text-white p-2 focus:outline-none" aria-label="Menyu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-brand-dark/95 border-b border-emerald-800 px-6 py-4 space-y-3">
+      <a href="#hero" class="block py-2 text-base font-semibold text-brand-bright">Asosiy</a>
+      <a href="#menu" class="block py-2 text-base text-emerald-100 hover:text-white">Menyu & Shirinliklar</a>
+      <a href="#popular" class="block py-2 text-base text-emerald-100 hover:text-white">Ommabop</a>
+      <a href="#branches" class="block py-2 text-base text-emerald-100 hover:text-white">Filiallar & Manzil (24/7)</a>
+      <a href="#contact" class="block py-2 text-base text-emerald-100 hover:text-white">Aloqa & Buyurtma</a>
+      <div class="pt-2 border-t border-emerald-800/60 flex items-center justify-between">
+        <span class="text-xs text-emerald-300">Kun-u tun ochiq</span>
+        <a href="tel:+998974487766" class="text-sm font-bold text-brand-bright">+998 97 448 77 66</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Inspired directly by the reference Starbucks layout) -->
+  <section id="hero" class="relative pt-8 pb-20 md:py-16 overflow-hidden">
+    <!-- Ambient Background Glows -->
+    <div class="absolute top-1/4 left-10 w-96 h-96 bg-brand-emerald/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-[30rem] h-[30rem] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Typography & Story -->
+        <div class="lg:col-span-6 space-y-6 text-left z-10">
+          
+          <!-- Sub-headline -->
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/50 border border-emerald-500/30 text-emerald-300 text-xs font-bold tracking-widest uppercase">
+            <span class="w-2 h-2 rounded-full bg-brand-bright"></span>
+            Har bir tilim va qultumda shirin lahza
+          </div>
+
+          <!-- Main Big Title -->
+          <div class="space-y-1">
+            <h2 class="text-emerald-200/90 text-xl sm:text-2xl font-light tracking-widest uppercase">
+              Where every bite tells a story
+            </h2>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-black tracking-tight text-white leading-[1.05]">
+              SIZNING <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-bright via-emerald-300 to-amber-200">
+                SEVIMLINGIZ?
+              </span>
+            </h1>
+          </div>
+
+          <!-- Active Hero Product Info Block (Dynamic) -->
+          <div id="heroProductDetails" class="bg-brand-card/80 border border-emerald-800/60 p-5 rounded-3xl backdrop-blur-sm space-y-3 shadow-xl">
+            <div class="flex items-center justify-between">
+              <span id="heroBadge" class="text-xs uppercase tracking-wider font-extrabold text-amber-300 bg-amber-400/15 px-3 py-1 rounded-full">
+                Xit Ichimlik • Special Frappe
+              </span>
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-emerald-200">
+                <i class="fa-solid fa-star text-amber-400"></i>
+                <span class="font-bold text-white">3.9</span>
+                <span class="text-emerald-400/80">(9+ Yandex baho)</span>
+              </div>
+            </div>
+
+            <h3 id="heroTitle" class="text-2xl sm:text-3xl font-serif font-bold text-white">
+              Pistachio Caramel Frappuccino
+            </h3>
+
+            <p id="heroDesc" class="text-emerald-200/80 text-sm leading-relaxed">
+              Muzdek mayin qahva, nozik pista kremi, karamel qatlami va tabiiy ko'pirtirilgan qaymoq uyg'unligi. Mycake qahvaxonasining yoz va qishdagi eng sara lazzati.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-emerald-800/50">
+              <div>
+                <span class="text-xs text-emerald-400 uppercase tracking-wider block">Narxi</span>
+                <span id="heroPrice" class="text-2xl sm:text-3xl font-extrabold text-white">42 000 <span class="text-base font-normal text-emerald-300">so'm</span></span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button id="heroAddToCartBtn" class="px-6 py-3 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest font-bold text-sm tracking-wide transition shadow-lg flex items-center gap-2 hover:scale-105 active:scale-95">
+                  <i class="fa-solid fa-bag-shopping"></i> Savatga qo'shish
+                </button>
+                <a href="tel:+998974487766" class="p-3 rounded-full bg-white/10 hover:bg-white/20 text-white transition border border-white/20" title="Qo'ng'iroq qilish">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnail Switcher (3 options like in Starbucks mockup) -->
+          <div class="space-y-2 pt-2">
+            <span class="text-xs uppercase tracking-wider text-emerald-400/80 font-semibold block">
+              Sara shirinliklar & ichimliklar (Tanlang):
+            </span>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3">
+              
+              <!-- Thumb 1: Frappuccino -->
+              <button onclick="switchHeroProduct(0)" class="hero-thumb group relative p-2 sm:p-2.5 rounded-2xl bg-brand-card hover:bg-brand-lightcard border-2 border-brand-bright transition-all duration-200 flex items-center gap-3 shadow-md focus:outline-none" data-index="0">
+                <img src="assets/images/hero-drink.jpg" alt="Pistachio Frappe" class="w-12 h-12 rounded-xl object-cover">
+                <div class="text-left">
+                  <p class="text-xs font-bold text-white group-hover:text-brand-bright">Pistachio Frappe</p>
+                  <p class="text-[11px] text-emerald-300">42 000 so'm</p>
+                </div>
+              </button>
+
+              <!-- Thumb 2: Bento Cake -->
+              <button onclick="switchHeroProduct(1)" class="hero-thumb group relative p-2 sm:p-2.5 rounded-2xl bg-brand-card hover:bg-brand-lightcard border-2 border-transparent hover:border-emerald-500/50 transition-all duration-200 flex items-center gap-3 shadow-md focus:outline-none" data-index="1">
+                <img src="assets/images/hero-cake.jpg" alt="Bento Berry Cake" class="w-12 h-12 rounded-xl object-cover">
+                <div class="text-left">
+                  <p class="text-xs font-bold text-white group-hover:text-brand-bright">Bento Berry Tort</p>
+                  <p class="text-[11px] text-emerald-300">95 000 so'm</p>
+                </div>
+              </button>
+
+              <!-- Thumb 3: Meringue Roll -->
+              <button onclick="switchHeroProduct(2)" class="hero-thumb group relative p-2 sm:p-2.5 rounded-2xl bg-brand-card hover:bg-brand-lightcard border-2 border-transparent hover:border-emerald-500/50 transition-all duration-200 flex items-center gap-3 shadow-md focus:outline-none" data-index="2">
+                <img src="assets/images/hero-meringue.jpg" alt="Strawberry Meringue" class="w-12 h-12 rounded-xl object-cover">
+                <div class="text-left">
+                  <p class="text-xs font-bold text-white group-hover:text-brand-bright">Meringa Ruleti</p>
+                  <p class="text-[11px] text-emerald-300">110 000 so'm</p>
+                </div>
+              </button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Hero Visual Arch (Mirrors the reference image style) -->
+        <div class="lg:col-span-6 flex justify-center relative">
+          
+          <!-- Outer Arch Container -->
+          <div class="relative w-full max-w-md aspect-[4/5] rounded-[60px] bg-gradient-to-b from-[#0a4635] via-[#053225] to-[#021812] border-4 border-emerald-500/30 p-4 shadow-2xl flex items-center justify-center overflow-hidden">
+            
+            <!-- Radial backdrop light -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-400/20 via-transparent to-transparent"></div>
+
+            <!-- Stylized Vertical Brand Text inside Arch -->
+            <div class="absolute right-4 top-1/2 -translate-y-1/2 text-emerald-400/15 font-black text-6xl tracking-widest uppercase writing-vertical select-none" style="writing-mode: vertical-rl;">
+              MYCAKE • 24/7
+            </div>
+
+            <!-- Floating 24/7 Badge on Top Corner -->
+            <div class="absolute top-6 left-6 z-20 bg-brand-bright text-brand-darkest font-extrabold text-xs px-3.5 py-1.5 rounded-full shadow-lg flex items-center gap-1.5 animate-pulseSubtle">
+              <span class="w-2 h-2 rounded-full bg-brand-darkest animate-ping"></span>
+              24 SOAT KUN-U TUN
+            </div>
+
+            <!-- Floating Coffee / Berry Accents (Floating Animation) -->
+            <div class="absolute top-12 right-12 z-20 animate-floatSlow">
+              <span class="text-3xl filter drop-shadow">🍓</span>
+            </div>
+            <div class="absolute bottom-20 left-8 z-20 animate-float">
+              <span class="text-2xl filter drop-shadow">☕</span>
+            </div>
+            <div class="absolute bottom-12 right-16 z-20 animate-floatSlow" style="animation-delay: 1.5s;">
+              <span class="text-2xl filter drop-shadow">✨</span>
+            </div>
+
+            <!-- Main Product Image (Crossfade smoothly on tab click) -->
+            <div class="relative w-full h-full flex items-center justify-center p-2 z-10">
+              <img id="heroMainImage" 
+                   src="assets/images/hero-drink.jpg" 
+                   alt="Mycake Hero Product" 
+                   class="max-h-[85%] max-w-[90%] object-contain rounded-3xl filter drop-shadow-[0_20px_35px_rgba(0,0,0,0.65)] transition-all duration-500 hover:scale-105">
+            </div>
+
+            <!-- Floating Pill at bottom of arch -->
+            <div class="absolute bottom-5 inset-x-8 z-20 bg-[#031c15]/90 border border-emerald-500/40 rounded-2xl p-3 backdrop-blur-md flex items-center justify-between text-xs text-emerald-200">
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-award text-amber-400 text-sm"></i>
+                Yuqori sifatli tabiiy mahsulotlar
+              </span>
+              <span class="font-bold text-brand-bright">100% Halol</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY SELECTOR TABS (DRINKS, FOOD, AT HOME, MERCHANDISE style) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 mb-10 z-20 relative">
+    <div class="flex items-center justify-center">
+      <div class="bg-brand-card/90 border border-emerald-700/50 p-1.5 rounded-2xl sm:rounded-full backdrop-blur-md shadow-2xl flex flex-wrap sm:flex-nowrap items-center justify-center gap-1 sm:gap-2 max-w-3xl w-full">
+        <button onclick="filterCategory('all')" class="cat-pill active px-3 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-full text-xs sm:text-sm font-bold transition bg-brand-bright text-brand-darkest shadow">
+          Barcha Mahsulotlar
+        </button>
+        <button onclick="filterCategory('drinks')" class="cat-pill px-3 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-full text-xs sm:text-sm font-semibold text-emerald-100 hover:text-white hover:bg-white/10 transition">
+          <i class="fa-solid fa-mug-hot mr-1 text-xs"></i> Qahva & Frappe
+        </button>
+        <button onclick="filterCategory('cakes')" class="cat-pill px-3 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-full text-xs sm:text-sm font-semibold text-emerald-100 hover:text-white hover:bg-white/10 transition">
+          <i class="fa-solid fa-cake-candles mr-1 text-xs"></i> Tortlar & Bento
+        </button>
+        <button onclick="filterCategory('rolls')" class="cat-pill px-3 sm:px-6 py-2 sm:py-2.5 rounded-xl sm:rounded-full text-xs sm:text-sm font-semibold text-emerald-100 hover:text-white hover:bg-white/10 transition">
+          <i class="fa-solid fa-cookie-bite mr-1 text-xs"></i> Merenga & Ruletlar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SHOWCASE CAROUSEL / GRID -->
+  <section id="menu" class="py-12 bg-[#021812] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-brand-bright font-bold block mb-1">
+            Bizning Shirin Menyu
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">
+            Har Bir Did Uchun Maxsus Tanlov
+          </h2>
+        </div>
+        <p class="text-sm text-emerald-300/80 max-w-md">
+          Kun-u tun yangi pishirilgan bento tortlar, qarsildoq merengalar va barra qahvalar. Buyurtma berishingiz bilan Toshkent bo'ylab tezkor yetkazamiz.
+        </p>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Card 1: Caramel Latte -->
+        <div class="product-item drinks group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-emerald-900/80 text-[10px] uppercase font-bold text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-600/40">
+                24/7 Mavjud
+              </span>
+              <img src="assets/images/hero-drink.jpg" alt="Caramel Frappuccino" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 4.9</span>
+              <span class="text-emerald-400">400 ml</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Karamelli Frappuccino
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Karamel sousi, espresso, maydalangan muz va ko'pirtirilgan yangi qaymoq.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">38 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Karamelli Frappuccino', 38000, 'assets/images/hero-drink.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2: Bento Berry Cake -->
+        <div class="product-item cakes group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-amber-500/20 text-[10px] uppercase font-bold text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/30">
+                Top Tanlov
+              </span>
+              <img src="assets/images/hero-cake.jpg" alt="Bento Berry Cake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 5.0</span>
+              <span class="text-emerald-400">450 gr</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Bento Berry Tort
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Malina va maymunjon bilan bezatilgan nozik biskvitli bento tort. Maxsus yozuv bilan.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">95 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Bento Berry Tort', 95000, 'assets/images/hero-cake.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3: Strawberry Meringue Roll -->
+        <div class="product-item rolls group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-brand-bright/20 text-[10px] uppercase font-bold text-brand-bright px-2 py-0.5 rounded-full border border-brand-bright/30">
+                Hafif & Nozik
+              </span>
+              <img src="assets/images/hero-meringue.jpg" alt="Strawberry Meringue Roll" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 4.9</span>
+              <span class="text-emerald-400">550 gr</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Qulupnayli Merenga Ruleti
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Og'izda eriydigan havodor merenga qobig'i, maskarpone kremi va tabiiy qulupnay.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">110 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Qulupnayli Merenga Ruleti', 110000, 'assets/images/hero-meringue.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4: Vanilla Bean Iced Brew -->
+        <div class="product-item drinks group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-emerald-900/80 text-[10px] uppercase font-bold text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-600/40">
+                Yangilik
+              </span>
+              <img src="assets/images/hero-drink.jpg" alt="Vanilla Bean Brew" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 4.8</span>
+              <span class="text-emerald-400">350 ml</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Vanilli Muzli Qahva
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Madagaskar vanili, sovuq sut va ikki hissa sifatli arabika espressosi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">32 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Vanilli Muzli Qahva', 32000, 'assets/images/hero-drink.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5: San Sebastian Cheesecake -->
+        <div class="product-item cakes group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-amber-500/20 text-[10px] uppercase font-bold text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/30">
+                Issiq Shokolad Bilan
+              </span>
+              <img src="assets/images/hero-cake.jpg" alt="San Sebastian" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 5.0</span>
+              <span class="text-emerald-400">220 gr</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              San Sebastyan Chizkeyk
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Kuygan oltinrang ustki qatlam, suyuq mayin pishloqli o'zak va Belgiya shokoladi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">45 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('San Sebastyan Chizkeyk', 45000, 'assets/images/hero-cake.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6: Pistachio Meringue Roll -->
+        <div class="product-item rolls group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-emerald-900/80 text-[10px] uppercase font-bold text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-600/40">
+                Premium
+              </span>
+              <img src="assets/images/hero-meringue.jpg" alt="Pistachio Roll" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 4.9</span>
+              <span class="text-emerald-400">550 gr</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Pistali Merenga Ruleti
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Tabiiy Eron pistasi pastasi, malina konfisi va yengil krem-chiz uyg'unligi.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">125 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Pistali Merenga Ruleti', 125000, 'assets/images/hero-meringue.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 7: Hazelnut Mocha Brew -->
+        <div class="product-item drinks group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-emerald-900/80 text-[10px] uppercase font-bold text-emerald-300 px-2 py-0.5 rounded-full border border-emerald-600/40">
+                Issiq / Sovuq
+              </span>
+              <img src="assets/images/hero-drink.jpg" alt="Hazelnut Mocha" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 4.7</span>
+              <span class="text-emerald-400">380 ml</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Funduqli Mokka (Hazelnut)
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Qovurilgan o'rmon yong'og'i xushbo'yi, to'q shokolad va yangi sutli qahva.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">36 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Funduqli Mokka', 36000, 'assets/images/hero-drink.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 8: Red Velvet Special Cake -->
+        <div class="product-item cakes group bg-gradient-to-b from-brand-card to-[#06241a] border border-emerald-700/40 rounded-3xl p-5 hover:border-brand-bright/70 transition-all duration-300 shadow-xl flex flex-col justify-between hover:-translate-y-1.5">
+          <div>
+            <div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-emerald-950 mb-4 flex items-center justify-center">
+              <span class="absolute top-2 left-2 bg-amber-500/20 text-[10px] uppercase font-bold text-amber-300 px-2 py-0.5 rounded-full border border-amber-500/30">
+                Klassik
+              </span>
+              <img src="assets/images/hero-cake.jpg" alt="Red Velvet Cake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <div class="flex items-center justify-between text-xs text-amber-300 mb-1">
+              <span>★★★★★ 4.9</span>
+              <span class="text-emerald-400">1.2 kg</span>
+            </div>
+            <h3 class="font-serif text-lg font-bold text-white group-hover:text-brand-bright transition">
+              Red Velvet (Qizil Baxmal)
+            </h3>
+            <p class="text-xs text-emerald-200/70 mt-1 line-clamp-2">
+              Qizil baxmal biskviti, kremli vanil sirlari va nozik qulupnayli qatlamlar.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-800/40 flex items-center justify-between">
+            <span class="font-bold text-white text-base">180 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Red Velvet Tort', 180000, 'assets/images/hero-cake.jpg')" class="px-3 py-1.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white text-xs font-bold transition flex items-center gap-1.5">
+              <i class="fa-solid fa-plus"></i> Savatga
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UNMATCHED QUALITY SHOWCASE BANNER (Mockup section: "UNMATCHED QUALITY" with ribbon tape) -->
+  <section class="py-24 bg-[#031c15] relative overflow-hidden">
+    
+    <!-- Huge Watermark text in background -->
+    <div class="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center watermark-text text-emerald-900/20 font-black text-8xl md:text-[14rem] tracking-tighter uppercase select-none">
+      QUALITY
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      
+      <!-- Handwriting flourish quote -->
+      <p class="font-script text-2xl md:text-3xl text-brand-bright mb-2">
+        "Har bir mahsulot mehr va san'at bilan tayyorlanadi"
+      </p>
+
+      <h2 class="text-4xl sm:text-6xl font-serif font-black text-white tracking-tight uppercase max-w-3xl mx-auto leading-tight">
+        TENGSIZ SIFAT VA <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-bright via-emerald-300 to-amber-200">
+          BETAKROR TA'M
+        </span>
+      </h2>
+
+      <p class="text-sm md:text-base text-emerald-200/80 max-w-xl mx-auto mt-4 leading-relaxed">
+        Mycake qandolatxona va qahvaxonasida biz faqat tabiiy qaymoq, sifatli saryog‘, xushbo‘y espresso donalari va yangi mevalardan foydalanamiz. Kun-u tun 24 soat xizmatingizdamiz.
+      </p>
+
+      <!-- Center Showcase Visual -->
+      <div class="relative my-12 max-w-md mx-auto">
+        <div class="w-72 h-72 sm:w-80 sm:h-80 mx-auto rounded-full bg-gradient-to-tr from-brand-emerald to-emerald-400 p-1 shadow-[0_0_60px_rgba(0,176,116,0.3)]">
+          <div class="w-full h-full rounded-full bg-[#031c15] p-3 flex items-center justify-center overflow-hidden">
+            <img src="assets/images/hero-cake.jpg" alt="Mycake Bento Quality" class="w-full h-full object-cover rounded-full animate-float">
+          </div>
+        </div>
+
+        <!-- Floating callout pill -->
+        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white text-brand-darkest px-6 py-2 rounded-full font-bold text-xs uppercase tracking-wider shadow-2xl flex items-center gap-2 whitespace-nowrap">
+          <i class="fa-solid fa-certificate text-amber-500 text-sm"></i>
+          100% Tabiiy Massaliqlar
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DIAGONAL MARQUEE RIBBON 1 (Exact match with reference Starbucks tape) -->
+    <div class="w-full py-4 bg-brand-bright text-brand-darkest font-extrabold text-sm sm:text-base tracking-widest uppercase overflow-hidden diagonal-tape my-6 z-20">
+      <div class="flex animate-marquee whitespace-nowrap">
+        <span class="mx-6">★ MYCAKE TASHKENT</span>
+        <span class="mx-6">★ 24/7 KUN-U TUN OCHIQ</span>
+        <span class="mx-6">★ QANDOLATXONA & QAHVAXONA</span>
+        <span class="mx-6">★ BUYURTMA TORTLAR</span>
+        <span class="mx-6">★ SERGELI FILIALI</span>
+        <span class="mx-6">★ +998 97 448 77 66</span>
+        <span class="mx-6">★ TEZKOR YETKAZIB BERISH</span>
+        <span class="mx-6">★ MYCAKE TASHKENT</span>
+        <span class="mx-6">★ 24/7 KUN-U TUN OCHIQ</span>
+        <span class="mx-6">★ QANDOLATXONA & QAHVAXONA</span>
+        <span class="mx-6">★ BUYURTMA TORTLAR</span>
+        <span class="mx-6">★ SERGELI FILIALI</span>
+        <span class="mx-6">★ +998 97 448 77 66</span>
+        <span class="mx-6">★ TEZKOR YETKAZIB BERISH</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- POPULAR SECTION (Mockup section: "POPULAR" with green banner) -->
+  <section id="popular" class="py-16 bg-[#021812] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- POPULAR Green Banner (like in mockup) -->
+      <div class="flex justify-center mb-12">
+        <div class="relative inline-block">
+          <div class="bg-brand-emerald text-white font-extrabold text-sm uppercase tracking-widest px-10 py-2.5 rounded-r-lg shadow-lg">
+            POPULAR • ENG SEVIMLILAR
+          </div>
+          <!-- Left Ribbon Flag cut -->
+          <div class="absolute -left-3 top-0 bottom-0 w-3 bg-emerald-800 rounded-l-md"></div>
+        </div>
+      </div>
+
+      <!-- 3 Featured Items matching the mockup layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Popular Item 1: Mocha Brew -->
+        <div class="bg-gradient-to-b from-[#0c3a2e] to-[#041f17] rounded-[36px] p-6 text-center border border-emerald-600/30 shadow-2xl relative group hover:border-brand-bright transition-all duration-300">
+          <div class="w-40 h-40 mx-auto -mt-12 rounded-full overflow-hidden border-4 border-emerald-500/40 shadow-xl bg-emerald-950 mb-4 group-hover:scale-105 transition-transform">
+            <img src="assets/images/hero-drink.jpg" alt="Mocha Brew" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[11px] font-bold text-amber-300 uppercase tracking-widest">№1 Ichimlik</span>
+          <h3 class="text-xl font-serif font-bold text-white mt-1">Mocha Brew Delight</h3>
+          <p class="text-xs text-emerald-200/70 mt-2">
+            Haqiqiy shokolad va sovuq espresso ustiga qaymoqli muz.
+          </p>
+          <div class="mt-4 pt-3 flex items-center justify-between border-t border-emerald-800/40">
+            <span class="text-lg font-bold text-white">40 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Mocha Brew Delight', 40000, 'assets/images/hero-drink.jpg')" class="px-4 py-2 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest font-bold text-xs uppercase transition shadow">
+              Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Popular Item 2: Bento Berry -->
+        <div class="bg-gradient-to-b from-[#0c3a2e] to-[#041f17] rounded-[36px] p-6 text-center border-2 border-brand-bright shadow-2xl relative group hover:scale-[1.02] transition-all duration-300">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-400 text-brand-darkest text-[10px] font-extrabold uppercase px-3 py-1 rounded-full shadow">
+            Eng Ko'p Buyurtma
+          </span>
+          <div class="w-40 h-40 mx-auto -mt-12 rounded-full overflow-hidden border-4 border-amber-400/60 shadow-xl bg-emerald-950 mb-4 group-hover:scale-105 transition-transform">
+            <img src="assets/images/hero-cake.jpg" alt="Bento Berry" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[11px] font-bold text-amber-300 uppercase tracking-widest">№1 Tort</span>
+          <h3 class="text-xl font-serif font-bold text-white mt-1">Bento Berry Special</h3>
+          <p class="text-xs text-emerald-200/70 mt-2">
+            Yangi mevalar bilan bezatilgan shohona mini bento tort.
+          </p>
+          <div class="mt-4 pt-3 flex items-center justify-between border-t border-emerald-800/40">
+            <span class="text-lg font-bold text-white">95 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Bento Berry Special', 95000, 'assets/images/hero-cake.jpg')" class="px-4 py-2 rounded-full bg-amber-400 hover:bg-amber-300 text-brand-darkest font-bold text-xs uppercase transition shadow">
+              Savatga
+            </button>
+          </div>
+        </div>
+
+        <!-- Popular Item 3: Strawberry Meringue -->
+        <div class="bg-gradient-to-b from-[#0c3a2e] to-[#041f17] rounded-[36px] p-6 text-center border border-emerald-600/30 shadow-2xl relative group hover:border-brand-bright transition-all duration-300">
+          <div class="w-40 h-40 mx-auto -mt-12 rounded-full overflow-hidden border-4 border-emerald-500/40 shadow-xl bg-emerald-950 mb-4 group-hover:scale-105 transition-transform">
+            <img src="assets/images/hero-meringue.jpg" alt="Strawberry Meringue" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[11px] font-bold text-amber-300 uppercase tracking-widest">№1 Shirinlik</span>
+          <h3 class="text-xl font-serif font-bold text-white mt-1">Merenga Rulet</h3>
+          <p class="text-xs text-emerald-200/70 mt-2">
+            Nozik qulupnayli qaymoqli to'ldirma bilan yengil desert.
+          </p>
+          <div class="mt-4 pt-3 flex items-center justify-between border-t border-emerald-800/40">
+            <span class="text-lg font-bold text-white">110 000 <span class="text-xs font-normal text-emerald-300">so'm</span></span>
+            <button onclick="addToCart('Merenga Rulet', 110000, 'assets/images/hero-meringue.jpg')" class="px-4 py-2 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest font-bold text-xs uppercase transition shadow">
+              Savatga
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OUR BRANCHES & LOCATION (Mockup: "OUR BRANCHES" with map cards) -->
+  <section id="branches" class="py-20 bg-[#031c15] relative border-t border-emerald-900/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left Vertical Title Box (Mirrors the exact mockup layout) -->
+        <div class="lg:col-span-3 bg-white text-brand-darkest rounded-3xl p-6 flex lg:flex-col justify-between items-center shadow-xl">
+          <div class="flex items-center gap-3 lg:block">
+            <div class="w-12 h-12 rounded-2xl bg-brand-emerald text-white flex items-center justify-center text-xl mb-0 lg:mb-4">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold text-emerald-800 tracking-widest block">Manzillar</span>
+              <h3 class="text-2xl font-serif font-extrabold uppercase tracking-tight">
+                OUR BRANCHES
+              </h3>
+            </div>
+          </div>
+          <p class="hidden lg:block text-xs text-gray-600 leading-relaxed">
+            Mycake qandolatxonasi kun-u tun, 24 soat siz va yaqinlaringiz uchun ochiq. Istalgan vaqtda tashrif buyuring yoki buyurtma bering!
+          </p>
+          <div class="bg-emerald-100 text-emerald-900 font-extrabold text-xs px-3.5 py-1.5 rounded-full flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-ping"></span>
+            24 SOAT OCHIQ
+          </div>
+        </div>
+
+        <!-- Right: Branches Interactive Cards & Map Information -->
+        <div class="lg:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Branch 1: Toshkent Asosiy Filiali (Google Maps & Yandex) -->
+          <div class="bg-brand-card border border-emerald-700/50 rounded-3xl p-6 shadow-xl flex flex-col justify-between relative group hover:border-brand-bright transition-all">
+            <div class="space-y-4">
+              <div class="flex items-start justify-between">
+                <div>
+                  <span class="text-[11px] font-bold text-amber-300 uppercase tracking-wider block">
+                    Bosh Filial • Qandolatxona & Qahvaxona
+                  </span>
+                  <h4 class="text-xl font-serif font-bold text-white mt-0.5">
+                    MY CAKE (Yusuf)
+                  </h4>
+                </div>
+                <div class="bg-amber-400/20 text-amber-300 text-xs font-bold px-2.5 py-1 rounded-full border border-amber-400/30 flex items-center gap-1">
+                  <i class="fa-solid fa-star text-[10px]"></i> 3.9 (9+ baho)
+                </div>
+              </div>
+
+              <!-- Address details -->
+              <div class="space-y-2 text-xs text-emerald-200/80">
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-location-dot text-brand-bright mt-0.5"></i>
+                  <span>Toshkent shahri (Lokatsiya: 41.301701, 69.210699)</span>
+                </p>
+                <p class="flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-brand-bright"></i>
+                  <a href="tel:+998974487766" class="font-semibold text-white hover:underline">+998 97 448 77 66</a>
+                </p>
+                <p class="flex items-center gap-2">
+                  <i class="fa-solid fa-clock text-brand-bright"></i>
+                  <span class="text-brand-bright font-bold">Kun-u tun: Dushanba - Yakshanba (24 soat ochiq)</span>
+                </p>
+              </div>
+
+              <!-- Live Interactive Google Map Embed Box -->
+              <div class="h-44 rounded-2xl bg-emerald-950 border border-emerald-800/80 overflow-hidden relative shadow-inner">
+                <iframe 
+                  src="https://maps.google.com/maps?q=41.301701,69.210699&hl=uz&z=16&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="w-full h-full rounded-2xl opacity-90 hover:opacity-100 transition-opacity">
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-emerald-800/50 flex flex-wrap items-center gap-2">
+              <a href="https://maps.google.com/maps?q=41.301701,69.210699&ll=41.301701,69.210699&z=16" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2.5 px-3 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest text-xs font-extrabold transition shadow flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-map-location-dot"></i> Google Xarita
+              </a>
+              <a href="https://yandex.uz/maps/org/mycake/22371425776/?yclid=" target="_blank" rel="noopener noreferrer" class="py-2.5 px-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-semibold transition border border-white/20 flex items-center gap-1.5" title="Yandex Xaritada ochish">
+                <i class="fa-solid fa-diamond-turn-right text-amber-400"></i> Yandex
+              </a>
+              <a href="tel:+998974487766" class="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition border border-white/20" title="Qo'ng'iroq qilish">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Branch 2: Express Delivery City-wide -->
+          <div class="bg-brand-card border border-emerald-700/50 rounded-3xl p-6 shadow-xl flex flex-col justify-between relative group hover:border-brand-bright transition-all">
+            <div class="space-y-4">
+              <div class="flex items-start justify-between">
+                <div>
+                  <span class="text-[11px] font-bold text-brand-bright uppercase tracking-wider block">
+                    Shahar Bo'ylab Xizmat
+                  </span>
+                  <h4 class="text-xl font-serif font-bold text-white mt-0.5">
+                    Yetkazib Berish Xizmati
+                  </h4>
+                </div>
+                <div class="bg-emerald-500/20 text-emerald-300 text-xs font-bold px-2.5 py-1 rounded-full border border-emerald-500/30">
+                  Tezkor Kuryer
+                </div>
+              </div>
+
+              <!-- Delivery details -->
+              <div class="space-y-2 text-xs text-emerald-200/80">
+                <p class="flex items-start gap-2">
+                  <i class="fa-solid fa-truck-fast text-brand-bright mt-0.5"></i>
+                  <span>Toshkent shahrining barcha tumanlariga 45 daqiqada yetkazish</span>
+                </p>
+                <p class="flex items-center gap-2">
+                  <i class="fa-solid fa-box text-brand-bright"></i>
+                  <span>Haroratni saqlovchi maxsus qutilar va bento to'plamlari</span>
+                </p>
+                <p class="flex items-center gap-2">
+                  <i class="fa-solid fa-clock text-brand-bright"></i>
+                  <span class="text-brand-bright font-bold">24/7 Tungi va kunduzgi yetkazib berish</span>
+                </p>
+              </div>
+
+              <!-- Mini Stylized Delivery Route Box -->
+              <div class="h-28 rounded-2xl bg-emerald-950 border border-emerald-800/80 overflow-hidden relative flex items-center justify-center p-3">
+                <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#00b074_1px,transparent_1px)] [background-size:12px_12px]"></div>
+                <div class="relative z-10 text-center">
+                  <div class="w-8 h-8 rounded-full bg-amber-400 text-brand-darkest mx-auto flex items-center justify-center font-bold mb-1 shadow-lg">
+                    <i class="fa-solid fa-motorcycle text-sm"></i>
+                  </div>
+                  <span class="text-[11px] font-bold text-white block">Toshkent Bo'ylab Yetkazish</span>
+                  <span class="text-[9px] text-amber-300">Telegram yoki qo'ng'iroq orqali</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-6 pt-4 border-t border-emerald-800/50 flex items-center gap-2">
+              <a href="https://t.me/mycakeuzb" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2.5 rounded-full bg-[#0088cc] hover:bg-[#0099e6] text-white text-xs font-bold transition shadow flex items-center justify-center gap-2">
+                <i class="fa-brands fa-telegram"></i> Telegramda Buyurtma (@mycakeuzb)
+              </a>
+              <a href="tel:+998974487766" class="p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition border border-white/20" title="Qo'ng'iroq qilish">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVERSE DIAGONAL MARQUEE RIBBON 2 -->
+  <div class="w-full py-4 bg-emerald-700 text-white font-extrabold text-sm sm:text-base tracking-widest uppercase overflow-hidden diagonal-tape-reverse my-4 z-20">
+    <div class="flex animate-marquee whitespace-nowrap">
+      <span class="mx-6">★ 24/7 KUN-U TUN XIZMAT</span>
+      <span class="mx-6">★ YANGI PISHIRILGAN SHIRINLIKLAR</span>
+      <span class="mx-6">★ SIFATLI QAHVA</span>
+      <span class="mx-6">★ BENTO TORTLAR</span>
+      <span class="mx-6">★ MERENGA RULETLARI</span>
+      <span class="mx-6">★ TOSHKENT SHAHRI</span>
+      <span class="mx-6">★ +998 97 448 77 66</span>
+      <span class="mx-6">★ 24/7 KUN-U TUN XIZMAT</span>
+      <span class="mx-6">★ YANGI PISHIRILGAN SHIRINLIKLAR</span>
+      <span class="mx-6">★ SIFATLI QAHVA</span>
+      <span class="mx-6">★ BENTO TORTLAR</span>
+      <span class="mx-6">★ MERENGA RULETLARI</span>
+      <span class="mx-6">★ TOSHKENT SHAHRI</span>
+      <span class="mx-6">★ +998 97 448 77 66</span>
+    </div>
+  </div>
+
+  <!-- CONTACT & FAST ORDER FORM (Mockup: "CONTACT" card + "THANK YOU!" card) -->
+  <section id="contact" class="py-20 bg-[#021812] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left: Contact / Order Form Card (White rounded card from mockup) -->
+        <div class="lg:col-span-7 bg-white text-brand-darkest rounded-[40px] p-8 sm:p-10 shadow-2xl">
+          <div class="mb-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-emerald">Tezkor Buyurtma & Aloqa</span>
+            <h3 class="text-2xl sm:text-3xl font-serif font-black text-brand-darkest mt-1">
+              CONTACT & ORDER
+            </h3>
+            <p class="text-xs sm:text-sm text-gray-600 mt-1">
+              Buyurtma bering yoki o'zingiz xohlagan maxsus tort uchun ma'lumot qoldiring. Biz 5 daqiqada siz bilan bog'lanamiz!
+            </p>
+          </div>
+
+          <form id="orderContactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase mb-1">
+                Ismingiz (F.I.O) <span class="text-emerald-700">*</span>
+              </label>
+              <input type="text" id="custName" required placeholder="Masalan: Xurshid Abdurashidov" class="w-full px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition">
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">
+                  Telefon raqamingiz <span class="text-emerald-700">*</span>
+                </label>
+                <input type="tel" id="custPhone" required placeholder="+998 90 123 45 67" class="w-full px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">
+                  Yetkazib berish manzili <span class="text-emerald-700">*</span>
+                </label>
+                <input type="text" id="custAddress" required placeholder="Masalan: Sagdiana, 14-uy" class="w-full px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Qiziqtirgan mahsulot</label>
+              <select id="custProduct" class="w-full px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition">
+                <option value="Bento Berry Special Tort — 95 000 so'm">Bento Berry Special Tort — 95 000 so'm</option>
+                <option value="Qulupnayli Merenga Rulet — 110 000 so'm">Qulupnayli Merenga Rulet — 110 000 so'm</option>
+                <option value="Pistachio Caramel Frappe — 42 000 so'm">Pistachio Caramel Frappe — 42 000 so'm</option>
+                <option value="San Sebastyan Chizkeyk — 45 000 so'm">San Sebastyan Chizkeyk — 45 000 so'm</option>
+                <option value="Pistali Merenga Ruleti — 125 000 so'm">Pistali Merenga Ruleti — 125 000 so'm</option>
+                <option value="Red Velvet Tort — 180 000 so'm">Red Velvet Tort — 180 000 so'm</option>
+                <option value="Maxsus Buyurtma Tort (Bayramona)">Maxsus Buyurtma Tort (Bayramona)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Qo'shimcha izoh yoki tabrik yozuvi</label>
+              <textarea id="custNotes" rows="2" placeholder="Masalan: Pulini to'lab yuborasiz yoki tort ustiga tabrik yozuvi..." class="w-full px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 text-sm focus:outline-none focus:border-brand-emerald focus:bg-white transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-full bg-brand-emerald hover:bg-brand-bright hover:text-brand-darkest text-white font-extrabold text-sm uppercase tracking-wider transition shadow-lg flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-95">
+              <i class="fa-brands fa-telegram text-lg"></i> Telegram orqali yuborish (@mycakeuzb)
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: "THANK YOU!" Green Card (Exact match with reference mockup) -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-brand-emerald to-[#02241b] rounded-[40px] p-8 sm:p-10 text-white shadow-2xl flex flex-col justify-between min-h-[420px] relative overflow-hidden border border-emerald-500/30">
+          
+          <div class="space-y-4 relative z-10">
+            <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-2xl text-amber-300">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            
+            <h3 class="text-3xl sm:text-4xl font-serif font-black tracking-tight uppercase">
+              THANK YOU!
+            </h3>
+            
+            <p class="text-emerald-100/90 text-sm sm:text-base leading-relaxed">
+              Bizni tanlaganingiz uchun tashakkur! <br>
+              <strong>Mycake</strong> har doim eng sara va shirin lahzalarni siz bilan bo'lishishdan baxtiyor.
+            </p>
+
+            <div class="bg-black/20 rounded-2xl p-4 border border-white/10 text-xs space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-300">Ish tartibi:</span>
+                <span class="font-bold text-white">Kun-u tun 24 soat</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-300">Tezkor aloqa:</span>
+                <a href="tel:+998974487766" class="font-bold text-amber-300 hover:underline">+998 97 448 77 66</a>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-emerald-300">Manzil:</span>
+                <a href="https://maps.google.com/maps?q=41.301701,69.210699&ll=41.301701,69.210699&z=16" target="_blank" rel="noopener noreferrer" class="font-semibold text-amber-300 hover:underline">Google Xarita (41.3017, 69.2107)</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Action with arrow (like mockup) -->
+          <div class="mt-8 pt-6 border-t border-white/15 flex items-center justify-between relative z-10">
+            <span class="text-xs uppercase font-bold tracking-widest text-emerald-200">
+              To'g'ridan-to'g'ri bog'lanish
+            </span>
+            <a href="tel:+998974487766" class="w-12 h-12 rounded-full bg-white text-brand-darkest hover:bg-brand-bright hover:scale-105 transition-all flex items-center justify-center shadow-lg">
+              <i class="fa-solid fa-arrow-right text-lg"></i>
+            </a>
+          </div>
+
+          <!-- Decorative background glow -->
+          <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-brand-bright/20 rounded-full blur-2xl pointer-events-none"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER (Exact brand footer matching mockup: logo seal, subscribe, contact watermark) -->
+  <footer class="bg-brand-darkest text-white pt-16 pb-8 border-t border-emerald-900/60 relative overflow-hidden">
+    
+    <!-- Huge Watermark CONTACT across bottom -->
+    <div class="absolute inset-x-0 bottom-0 text-center watermark-text text-emerald-950/40 font-black text-7xl sm:text-9xl md:text-[13rem] tracking-widest uppercase select-none pointer-events-none leading-none">
+      MYCAKE
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center pb-12 border-b border-emerald-900/60">
+        
+        <!-- Left: Logo & Bio -->
+        <div class="md:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-14 h-14 rounded-full p-0.5 shadow-md overflow-hidden border border-amber-400/50 bg-[#06261d]">
+              <img src="assets/images/logo.jpg" onerror="if(window.MYCAKE_LOGO_B64){this.src=window.MYCAKE_LOGO_B64;}" alt="MY CAKE YUSUF" class="w-full h-full object-cover rounded-full mycake-logo-img">
+            </div>
+            <div>
+              <span class="font-serif text-2xl font-bold tracking-wider text-white">MY CAKE</span>
+              <span class="block text-[10px] text-amber-300 uppercase tracking-widest font-semibold">YUSUF • EST. 2022</span>
+            </div>
+          </div>
+          <p class="text-xs text-emerald-300/70 max-w-sm leading-relaxed">
+            Toshkentdagi 24/7 kun-u tun xizmat ko'rsatuvchi premium shirinliklar maskani. Yangi pishirilgan bento tortlar, nozik ruletlar va xushbo'y qahvalar.
+          </p>
+        </div>
+
+        <!-- Center: Circular Seal Logo (Mockup center stamp) -->
+        <div class="md:col-span-4 flex justify-center">
+          <div class="w-28 h-28 rounded-full border-2 border-amber-400/50 p-1 flex items-center justify-center shadow-2xl overflow-hidden hover:scale-105 transition-transform bg-[#06261d]">
+            <img src="assets/images/logo.jpg" onerror="if(window.MYCAKE_LOGO_B64){this.src=window.MYCAKE_LOGO_B64;}" alt="MY CAKE YUSUF Logo" class="w-full h-full object-cover rounded-full mycake-logo-img">
+          </div>
+        </div>
+
+        <!-- Right: Subscribe / Telegram Input -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs uppercase font-extrabold tracking-widest text-emerald-300">
+            Telegram Kanalimiz
+          </h4>
+          <p class="text-xs text-emerald-400/80">
+            Aksiya, chegirmalar va yangi shirinliklar haqida Telegramda birinchi bo'lib bilib boring:
+          </p>
+          <a href="https://t.me/mycakeuzb" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#0088cc] hover:bg-[#0099e6] text-white font-bold text-xs uppercase tracking-wider transition shadow-lg">
+            <i class="fa-brands fa-telegram text-base"></i> @mycakeuzb ga a'zo bo'lish
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Quick Contact Links -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-emerald-400/70 gap-4">
+        <div>
+          © 2026 Mycake (Yusuf). Barcha huquqlar himoyalangan.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://t.me/mycakeuzb" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1.5 text-[#0088cc] font-bold">
+            <i class="fa-brands fa-telegram text-sm"></i> @mycakeuzb
+          </a>
+          <a href="https://maps.google.com/maps?q=41.301701,69.210699&ll=41.301701,69.210699&z=16" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1 text-amber-300">
+            <i class="fa-solid fa-map-location-dot text-brand-bright"></i> Google Xarita (41.3017, 69.2107)
+          </a>
+          <a href="https://yandex.uz/maps/org/mycake/22371425776/?yclid=" target="_blank" rel="noopener noreferrer" class="hover:text-white transition flex items-center gap-1">
+            <i class="fa-solid fa-map-pin text-amber-400"></i> Yandex (3.9 ⭐)
+          </a>
+          <a href="tel:+998974487766" class="hover:text-white transition flex items-center gap-1">
+            <i class="fa-solid fa-phone text-brand-bright"></i> +998 97 448 77 66
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK CALL & TELEGRAM BUTTONS (Mobile responsive) -->
+  <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 sm:gap-3">
+    <!-- Telegram Quick Button -->
+    <a href="https://t.me/mycakeuzb" target="_blank" rel="noopener noreferrer" class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#0088cc] hover:bg-[#0099e6] text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all" title="Telegramda yozish (@mycakeuzb)">
+      <i class="fa-brands fa-telegram text-xl sm:text-2xl"></i>
+    </a>
+    <!-- Phone Call Pulse Button -->
+    <a href="tel:+998974487766" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-brand-bright text-brand-darkest flex items-center justify-center shadow-2xl hover:scale-110 transition-all relative" title="Qo'ng'iroq qilish (24/7)">
+      <span class="absolute inset-0 rounded-full bg-brand-bright animate-ping opacity-40"></span>
+      <i class="fa-solid fa-phone-volume text-xl sm:text-2xl relative z-10"></i>
+    </a>
+  </div>
+
+  <!-- SHOPPING CART SLIDE-OVER DRAWER -->
+  <div id="cartDrawer" class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0">
+    <!-- Backdrop -->
+    <div id="cartBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm pointer-events-auto"></div>
+
+    <!-- Drawer Panel (Full width on mobile, max-w-md on tablet/desktop) -->
+    <div id="cartPanel" class="absolute right-0 top-0 bottom-0 w-full sm:max-w-md bg-brand-darkest border-l border-emerald-800 text-white shadow-2xl flex flex-col justify-between pointer-events-auto transform translate-x-full transition-transform duration-300">
+      
+      <!-- Drawer Header -->
+      <div class="p-6 border-b border-emerald-900 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-emerald flex items-center justify-center text-white">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <div>
+            <h3 class="font-serif text-lg font-bold">Savatingiz</h3>
+            <span class="text-xs text-emerald-300">Mycake 24/7 yetkazib berish</span>
+          </div>
+        </div>
+        <button id="closeCartBtn" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Items List -->
+      <div id="cartItemsList" class="p-6 overflow-y-auto flex-1 space-y-4">
+        <!-- Will be populated by JavaScript -->
+        <div class="text-center py-12 text-emerald-300/60">
+          <i class="fa-solid fa-basket-shopping text-4xl mb-3 block"></i>
+          <p class="text-sm">Savatingiz hozircha bo'sh.</p>
+          <p class="text-xs mt-1">Menyudan sevimli shirinligingizni tanlang!</p>
+        </div>
+      </div>
+
+      <!-- Drawer Footer with Total & Order Button -->
+      <div class="p-6 border-t border-emerald-900 bg-[#021812] space-y-4">
+        <div class="flex items-center justify-between">
+          <span class="text-sm text-emerald-300">Jami hisob:</span>
+          <span id="cartTotalPrice" class="text-2xl font-extrabold text-white">0 <span class="text-sm font-normal text-emerald-400">so'm</span></span>
+        </div>
+
+        <button onclick="checkoutOrder()" class="w-full py-3.5 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest font-extrabold text-sm uppercase tracking-wide transition shadow-lg flex items-center justify-center gap-2">
+          <i class="fa-solid fa-check-circle"></i> Buyurtmani Tasdiqlash
+        </button>
+
+        <a href="tel:+998974487766" class="w-full py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-semibold text-center block transition">
+          <i class="fa-solid fa-phone mr-1"></i> Telefon orqali tezkor buyurtma
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL (For placing orders to @mycakeuzb) -->
+  <div id="checkoutModal" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div id="checkoutBackdrop" class="absolute inset-0 bg-black/75 backdrop-blur-md pointer-events-auto" onclick="closeCheckoutModal()"></div>
+
+    <!-- Modal Dialog -->
+    <div class="relative bg-brand-darkest border-2 border-emerald-500/60 text-white rounded-[32px] p-6 sm:p-8 max-w-lg w-full shadow-2xl z-10 pointer-events-auto max-h-[92vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="checkoutDialog">
+      
+      <!-- Close Button -->
+      <button onclick="closeCheckoutModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+        ✕
+      </button>
+
+      <!-- Modal Header -->
+      <div class="flex items-center gap-3 mb-5 border-b border-emerald-800/60 pb-4">
+        <div class="w-12 h-12 rounded-2xl bg-brand-emerald flex items-center justify-center text-white text-xl shadow-lg">
+          📋
+        </div>
+        <div>
+          <h3 class="text-xl font-serif font-bold text-white">Buyurtmani Rasmiylashtirish</h3>
+          <p class="text-xs text-brand-bright font-semibold">Telegram: @mycakeuzb ga to'g'ridan-to'g'ri yuboriladi</p>
+        </div>
+      </div>
+
+      <!-- Order Items Summary Box -->
+      <div class="bg-brand-card/90 border border-emerald-800/80 rounded-2xl p-4 mb-5 text-xs space-y-2">
+        <div class="flex items-center justify-between text-emerald-300 font-bold uppercase tracking-wider text-[11px] pb-1 border-b border-emerald-800/50">
+          <span>Tanlangan Mahsulotlar</span>
+          <span id="checkoutItemsCountBadge" class="text-amber-300">0 xil</span>
+        </div>
+        <div id="checkoutItemsList" class="space-y-1.5 max-h-36 overflow-y-auto pr-1">
+          <!-- Populated dynamically -->
+        </div>
+        <div class="pt-2 border-t border-emerald-800/50 flex items-center justify-between font-extrabold text-sm sm:text-base text-white">
+          <span>Jami to'lov:</span>
+          <span id="checkoutTotalSum" class="text-amber-300 font-black">0 so'm</span>
+        </div>
+      </div>
+
+      <!-- Customer Details Form -->
+      <form id="checkoutForm" onsubmit="handleCheckoutSubmit(event)" class="space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-emerald-300 uppercase mb-1">
+            👤 Ismingiz (F.I.O) <span class="text-amber-400">*</span>
+          </label>
+          <input type="text" id="chkCustName" required placeholder="Masalan: Xurshid Abdurashidov" class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-sm text-white placeholder-emerald-300/40 focus:outline-none focus:border-brand-bright focus:bg-white/15 transition">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-emerald-300 uppercase mb-1">
+            📞 Telefon raqamingiz <span class="text-amber-400">*</span>
+          </label>
+          <input type="tel" id="chkCustPhone" required placeholder="+998 90 123 45 67" class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-sm text-white placeholder-emerald-300/40 focus:outline-none focus:border-brand-bright focus:bg-white/15 transition">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-emerald-300 uppercase mb-1">
+            📍 Yetkazib berish manzili <span class="text-amber-400">*</span>
+          </label>
+          <input type="text" id="chkCustAddress" required placeholder="Masalan: Sagdiana, 14-uy" class="w-full px-4 py-2.5 rounded-xl bg-white/10 border border-white/20 text-sm text-white placeholder-emerald-300/40 focus:outline-none focus:border-brand-bright focus:bg-white/15 transition">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-emerald-300 uppercase mb-1">
+            📝 Qo'shimcha izoh
+          </label>
+          <textarea id="chkCustNotes" rows="2" placeholder="Masalan: Pulini to'lab yuborasiz yoki qo'shimcha istak..." class="w-full px-4 py-2 rounded-xl bg-white/10 border border-white/20 text-sm text-white placeholder-emerald-300/40 focus:outline-none focus:border-brand-bright focus:bg-white/15 transition"></textarea>
+        </div>
+
+        <!-- Submit to Telegram Button -->
+        <button type="submit" class="w-full py-3.5 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest font-extrabold text-sm uppercase tracking-wide transition shadow-xl flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95">
+          <i class="fa-brands fa-telegram text-lg"></i>
+          Telegram orqali yuborish (@mycakeuzb)
+        </button>
+      </form>
+
+      <div class="mt-4 pt-3 border-t border-emerald-900/60 flex items-center justify-between text-xs text-emerald-300/80">
+        <span>Tezkor telefon buyurtma:</span>
+        <a href="tel:+998974487766" class="font-bold text-amber-300 hover:underline">+998 97 448 77 66</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ORDER SUCCESS / SENT CONFIRMATION MODAL -->
+  <div id="orderSuccessModal" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-black/80 backdrop-blur-md pointer-events-auto" onclick="closeOrderSuccessModal()"></div>
+    <div class="relative bg-gradient-to-b from-[#0c3a2e] to-[#041f17] border-2 border-brand-bright text-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl z-10 pointer-events-auto text-center space-y-4">
+      <div class="w-16 h-16 rounded-full bg-brand-bright/20 border-2 border-brand-bright mx-auto flex items-center justify-center text-3xl text-brand-bright font-black">
+        ✓
+      </div>
+      <h3 class="text-2xl font-serif font-black text-white">Buyurtma Tayyorlandi!</h3>
+      <p class="text-xs sm:text-sm text-emerald-100/90 leading-relaxed">
+        Xabar matni nusxalandi va Telegram ochildi. <br>
+        Agar xabar avtomatik tushmasa, <strong>@mycakeuzb</strong> chatiga shunchaki <strong>"Qo'yish" (Paste)</strong> qiling!
+      </p>
+      
+      <div class="bg-black/40 rounded-2xl p-3 text-left text-[11px] font-mono text-emerald-300/90 max-h-36 overflow-y-auto border border-white/10 whitespace-pre-line" id="successOrderPreview"></div>
+
+      <div class="space-y-2 pt-2">
+        <a href="https://t.me/mycakeuzb" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-full bg-brand-bright hover:bg-emerald-400 text-brand-darkest font-extrabold text-xs uppercase tracking-wider block transition shadow-lg flex items-center justify-center gap-1.5">
+          <i class="fa-brands fa-telegram text-base"></i> @mycakeuzb Chatini Ochish
+        </a>
+        <button onclick="copyCurrentOrderMsg()" class="w-full py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-xs font-bold block transition border border-white/15">
+          📋 Xabarni Qayta Nusxalash
+        </button>
+        <button onclick="closeOrderSuccessModal()" class="w-full py-2 rounded-full text-emerald-400 hover:text-white text-xs block transition">
+          Yopish
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="fixed top-24 right-6 z-50 bg-brand-bright text-brand-darkest font-bold px-5 py-3 rounded-2xl shadow-2xl transform translate-y-[-100px] opacity-0 transition-all duration-300 flex items-center gap-3">
+    <i class="fa-solid fa-circle-check text-xl"></i>
+    <span id="toastMsg">Savatga qo'shildi!</span>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Hero Product Switcher Data
+    const heroProducts = [
+      {
+        badge: "Xit Ichimlik • Special Frappe",
+        title: "Pistachio Caramel Frappuccino",
+        desc: "Muzdek mayin qahva, nozik pista kremi, karamel qatlami va tabiiy ko'pirtirilgan qaymoq uyg'unligi. Mycake qahvaxonasining yoz va qishdagi eng sara lazzati.",
+        price: "42 000",
+        rawPrice: 42000,
+        img: "assets/images/hero-drink.jpg"
+      },
+      {
+        badge: "Xit Tort • Nozik Bento",
+        title: "Bento Berry Special Tort",
+        desc: "Malina, maymunjon va oltin barg parchalar bilan bezatilgan shohona bento tort. Har qanday shirin bayramingiz va sovg'a uchun mukammal tanlov.",
+        price: "95 000",
+        rawPrice: 95000,
+        img: "assets/images/hero-cake.jpg"
+      },
+      {
+        badge: "Maxsus Shirinlik • Merenga Rulet",
+        title: "Qulupnayli Merenga Ruleti",
+        desc: "Havorang eruvchan qarsildoq merenga qobig'i, nozik maskarpone kremi va yangi shirin qulupnaylar bilan to'ldirilgan unutilmas desert.",
+        price: "110 000",
+        rawPrice: 110000,
+        img: "assets/images/hero-meringue.jpg"
+      }
+    ];
+
+    let currentHeroIndex = 0;
+
+    function switchHeroProduct(index) {
+      currentHeroIndex = index;
+      const p = heroProducts[index];
+
+      // Update text details
+      document.getElementById('heroBadge').textContent = p.badge;
+      document.getElementById('heroTitle').textContent = p.title;
+      document.getElementById('heroDesc').textContent = p.desc;
+      document.getElementById('heroPrice').innerHTML = `${p.price} <span class="text-base font-normal text-emerald-300">so'm</span>`;
+
+      // Update image with smooth fade
+      const imgEl = document.getElementById('heroMainImage');
+      imgEl.style.opacity = '0';
+      imgEl.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        imgEl.src = p.img;
+        imgEl.style.opacity = '1';
+        imgEl.style.transform = 'scale(1)';
+      }, 200);
+
+      // Update active thumbnail border
+      document.querySelectorAll('.hero-thumb').forEach((thumb, i) => {
+        if (i === index) {
+          thumb.classList.add('border-brand-bright');
+          thumb.classList.remove('border-transparent');
+        } else {
+          thumb.classList.remove('border-brand-bright');
+          thumb.classList.add('border-transparent');
+        }
+      });
+    }
+
+    document.getElementById('heroAddToCartBtn').addEventListener('click', () => {
+      const p = heroProducts[currentHeroIndex];
+      addToCart(p.title, p.rawPrice, p.img);
+    });
+
+    // Category Filter Logic
+    function filterCategory(cat) {
+      const pills = document.querySelectorAll('.cat-pill');
+      pills.forEach(p => {
+        p.classList.remove('bg-brand-bright', 'text-brand-darkest', 'shadow');
+        p.classList.add('text-emerald-100');
+      });
+      event.target.classList.add('bg-brand-bright', 'text-brand-darkest', 'shadow');
+      event.target.classList.remove('text-emerald-100');
+
+      const items = document.querySelectorAll('.product-item');
+      items.forEach(item => {
+        if (cat === 'all' || item.classList.contains(cat)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Shopping Cart State & Functions
+    let cart = [];
+
+    function addToCart(title, price, img) {
+      const existing = cart.find(item => item.title === title);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ title, price, img, qty: 1 });
+      }
+      updateCartUI();
+      showToast(`${title} savatga qo'shildi!`);
+    }
+
+    function changeQty(title, delta) {
+      const item = cart.find(i => i.title === title);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.title !== title);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const badge = document.getElementById('cartCountBadge');
+      const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
+      badge.textContent = totalItems;
+
+      const itemsList = document.getElementById('cartItemsList');
+      const totalPriceEl = document.getElementById('cartTotalPrice');
+
+      if (cart.length === 0) {
+        itemsList.innerHTML = `
+          <div class="text-center py-12 text-emerald-300/60">
+            <i class="fa-solid fa-basket-shopping text-4xl mb-3 block"></i>
+            <p class="text-sm">Savatingiz hozircha bo'sh.</p>
+            <p class="text-xs mt-1">Menyudan sevimli shirinligingizni tanlang!</p>
+          </div>
+        `;
+        totalPriceEl.innerHTML = `0 <span class="text-sm font-normal text-emerald-400">so'm</span>`;
+        return;
+      }
+
+      let totalSum = 0;
+      let html = '';
+
+      cart.forEach(item => {
+        const itemSum = item.price * item.qty;
+        totalSum += itemSum;
+        html += `
+          <div class="flex items-center gap-3 bg-brand-card p-3 rounded-2xl border border-emerald-800">
+            <img src="${item.img}" alt="${item.title}" class="w-14 h-14 rounded-xl object-cover">
+            <div class="flex-1">
+              <h4 class="text-xs font-bold text-white">${item.title}</h4>
+              <p class="text-[11px] text-brand-bright font-semibold">${item.price.toLocaleString('uz-UZ')} so'm</p>
+            </div>
+            <div class="flex items-center gap-2 bg-emerald-950 px-2 py-1 rounded-full border border-emerald-800">
+              <button onclick="changeQty('${item.title}', -1)" class="w-6 h-6 rounded-full bg-emerald-900 text-white flex items-center justify-center text-xs hover:bg-emerald-700">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <span class="text-xs font-bold text-white px-1">${item.qty}</span>
+              <button onclick="changeQty('${item.title}', 1)" class="w-6 h-6 rounded-full bg-emerald-900 text-white flex items-center justify-center text-xs hover:bg-emerald-700">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      });
+
+      itemsList.innerHTML = html;
+      totalPriceEl.innerHTML = `${totalSum.toLocaleString('uz-UZ')} <span class="text-sm font-normal text-emerald-400">so'm</span>`;
+    }
+
+    // Cart Drawer Open/Close
+    const cartDrawer = document.getElementById('cartDrawer');
+    const cartPanel = document.getElementById('cartPanel');
+    const openCartBtn = document.getElementById('openCartBtn');
+    const closeCartBtn = document.getElementById('closeCartBtn');
+    const cartBackdrop = document.getElementById('cartBackdrop');
+
+    function openCart() {
+      cartDrawer.classList.remove('pointer-events-none', 'opacity-0');
+      cartDrawer.classList.add('opacity-100');
+      cartPanel.classList.remove('translate-x-full');
+    }
+
+    function closeCart() {
+      cartPanel.classList.add('translate-x-full');
+      cartDrawer.classList.add('opacity-0');
+      setTimeout(() => {
+        cartDrawer.classList.add('pointer-events-none');
+      }, 300);
+    }
+
+    openCartBtn.addEventListener('click', openCart);
+    closeCartBtn.addEventListener('click', closeCart);
+    cartBackdrop.addEventListener('click', closeCart);
+
+    // Toast Notification
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.remove('translate-y-[-100px]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-[-100px]', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2500);
+    }
+
+    let lastGeneratedOrderMsg = '';
+
+    // Open Checkout Modal from Cart Drawer
+    function checkoutOrder() {
+      if (cart.length === 0) {
+        showToast("Savat bo'sh. Iltimos, avval mahsulot tanlang!");
+        return;
+      }
+      closeCart();
+
+      // Render items in modal
+      const itemsListEl = document.getElementById('checkoutItemsList');
+      const badgeEl = document.getElementById('checkoutItemsCountBadge');
+      const totalSumEl = document.getElementById('checkoutTotalSum');
+
+      let total = 0;
+      let html = '';
+      cart.forEach((it, idx) => {
+        const sub = it.price * it.qty;
+        total += sub;
+        html += `
+          <div class="flex items-center justify-between text-xs py-1.5 border-b border-emerald-900/40">
+            <span class="text-white font-medium">${idx + 1}. ${it.title} (${it.qty} dona)</span>
+            <span class="text-brand-bright font-bold">${sub.toLocaleString('uz-UZ')} so'm</span>
+          </div>
+        `;
+      });
+
+      itemsListEl.innerHTML = html;
+      badgeEl.textContent = `${cart.length} xil mahsulot`;
+      totalSumEl.textContent = `${total.toLocaleString('uz-UZ')} so'm`;
+
+      // Open Modal
+      const modal = document.getElementById('checkoutModal');
+      const dialog = document.getElementById('checkoutDialog');
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      modal.classList.add('opacity-100');
+      dialog.classList.remove('scale-95');
+      dialog.classList.add('scale-100');
+    }
+
+    function closeCheckoutModal() {
+      const modal = document.getElementById('checkoutModal');
+      const dialog = document.getElementById('checkoutDialog');
+      dialog.classList.remove('scale-100');
+      dialog.classList.add('scale-95');
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('pointer-events-none');
+      }, 300);
+    }
+
+    // Handle Modal Checkout Form Submit (To Telegram @mycakeuzb)
+    function handleCheckoutSubmit(e) {
+      e.preventDefault();
+      if (cart.length === 0) {
+        showToast("Savat bo'sh!");
+        return;
+      }
+
+      const name = document.getElementById('chkCustName').value.trim();
+      const phone = document.getElementById('chkCustPhone').value.trim();
+      const address = document.getElementById('chkCustAddress').value.trim();
+      const notes = document.getElementById('chkCustNotes').value.trim();
+
+      // Build item lines matching user template
+      let total = 0;
+      let itemsLines = cart.map((it, idx) => {
+        const sub = it.price * it.qty;
+        total += sub;
+        return `${idx + 1}. ${it.title} — ${it.qty} dona x ${it.price.toLocaleString('uz-UZ')} so'm = ${sub.toLocaleString('uz-UZ')} so'm`;
+      }).join('\n');
+
+      const message = `Assalomu alaykum! Mycake (Yusuf) Qandolatxona & Qahvaxonasidan yangi umumiy buyurtma:\n\n` +
+        `📋 BUYURTMA TARKIBI (${cart.length} xil mahsulot):\n` +
+        `${itemsLines}\n` +
+        `----------------------------------------\n` +
+        `💰 JAMI TO'LOV: ${total.toLocaleString('uz-UZ')} so'm\n\n` +
+        `👤 MIJOZ MA'LUMOTLARI:\n` +
+        `• Ismi: ${name}\n` +
+        `• Telefon raqami: ${phone}\n` +
+        `📍 Yetkazib berish manzili: ${address}\n` +
+        `📝 Qo'shimcha izoh: ${notes || 'pulini tulab yuborasiz'}\n\n` +
+        `Iltimos, buyurtmani qabul qilib, tasdiqlasangiz!`;
+
+      lastGeneratedOrderMsg = message;
+
+      // Copy to clipboard
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(message).catch(() => {});
+      }
+
+      // Reset cart and close modal
+      cart = [];
+      updateCartUI();
+      closeCheckoutModal();
+      document.getElementById('checkoutForm').reset();
+
+      // Open Telegram and Show Confirmation
+      openTelegramWithText(message);
+    }
+
+    // Handle Contact Form Submit (To Telegram @mycakeuzb)
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const address = document.getElementById('custAddress').value.trim();
+      const product = document.getElementById('custProduct').value;
+      const notes = document.getElementById('custNotes').value.trim();
+
+      // Parse product price if present
+      let priceText = product.includes('—') ? product.split('—')[1].trim() : "95 000 so'm";
+      let titleText = product.includes('—') ? product.split('—')[0].trim() : product;
+
+      const message = `Assalomu alaykum! Mycake (Yusuf) Qandolatxona & Qahvaxonasidan yangi umumiy buyurtma:\n\n` +
+        `📋 BUYURTMA TARKIBI (1 xil mahsulot):\n` +
+        `1. ${titleText} — 1 dona x ${priceText} = ${priceText}\n` +
+        `----------------------------------------\n` +
+        `💰 JAMI TO'LOV: ${priceText}\n\n` +
+        `👤 MIJOZ MA'LUMOTLARI:\n` +
+        `• Ismi: ${name}\n` +
+        `• Telefon raqami: ${phone}\n` +
+        `📍 Yetkazib berish manzili: ${address}\n` +
+        `📝 Qo'shimcha izoh: ${notes || 'pulini tulab yuborasiz'}\n\n` +
+        `Iltimos, buyurtmani qabul qilib, tasdiqlasangiz!`;
+
+      lastGeneratedOrderMsg = message;
+
+      // Copy to clipboard
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(message).catch(() => {});
+      }
+
+      document.getElementById('orderContactForm').reset();
+      openTelegramWithText(message);
+    }
+
+    function openTelegramWithText(text) {
+      // 1. Share URL with pre-filled message (opens Telegram directly with text in input box)
+      const shareUrl = `https://t.me/share/url?text=${encodeURIComponent(text)}`;
+      window.open(shareUrl, '_blank');
+
+      // 2. Open Success confirmation modal
+      document.getElementById('successOrderPreview').textContent = text;
+      const modal = document.getElementById('orderSuccessModal');
+      modal.classList.remove('pointer-events-none', 'opacity-0');
+      modal.classList.add('opacity-100');
+    }
+
+    function closeOrderSuccessModal() {
+      const modal = document.getElementById('orderSuccessModal');
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0');
+      setTimeout(() => {
+        modal.classList.add('pointer-events-none');
+      }, 300);
+    }
+
+    function copyCurrentOrderMsg() {
+      if (lastGeneratedOrderMsg && navigator.clipboard) {
+        navigator.clipboard.writeText(lastGeneratedOrderMsg).then(() => {
+          showToast("Xabar matni nusxalandi!");
+        });
+      }
+    }
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Auto-close mobile menu when clicking any link
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // ==========================================
+    // FRUIT EMOJI PARTICLES (Chapdan o'ngga, markazda aylanib, to'xtovsiz)
+    // ==========================================
+    (function initFruitParticles() {
+      const canvas = document.getElementById('leavesWindCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      let width = 0, height = 0;
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      // Meva emoji-lari ro'yxati (qulupnay, malina, ko'k smorodina, gilos, shaftoli, limon, apelsin)
+      const FRUITS = ['🍓', '🍒', '🫐', '🍑', '🍋', '🍊', '🍓', '🍒', '🫐'];
+
+      class FruitParticle {
+        constructor(isInitial) { this.reset(isInitial); }
+
+        reset(isInitial = false) {
+          this.progress  = isInitial ? Math.random() : -0.05 - Math.random() * 0.15;
+          this.speed     = 0.0013 + Math.random() * 0.0018;
+          this.size      = 14 + Math.random() * 18; // 14–32 px font size
+          this.emoji     = FRUITS[Math.floor(Math.random() * FRUITS.length)];
+
+          // Vertikal yo'l
+          this.startY    = height * (0.08 + Math.random() * 0.78);
+          this.endY      = this.startY + (Math.random() - 0.5) * height * 0.35;
+          this.waveAmp   = 10 + Math.random() * 28;
+          this.waveFreq  = 2 + Math.random() * 3;
+          this.phase     = Math.random() * Math.PI * 2;
+
+          // Markazdagi girdobon ("ortada aylanib olsin")
+          this.swirlStart    = 0.35 + (Math.random() - 0.5) * 0.08;
+          this.swirlDuration = 0.22 + Math.random() * 0.10;
+          this.swirlRadius   = 38 + Math.random() * 80;
+          this.swirlDir      = Math.random() > 0.5 ? 1 : -1;
+          this.swirlLoops    = Math.random() > 0.4 ? 1 : 2;
+
+          // Aylanish
+          this.rotation      = (Math.random() - 0.5) * 0.6;
+          this.rotSpeed      = (Math.random() - 0.5) * 0.06;
+          this.opacity       = 0.72 + Math.random() * 0.28;
+        }
+
+        update() {
+          this.progress += this.speed;
+          this.rotation += this.rotSpeed;
+          if (this.progress > 1.12) this.reset(false);
+        }
+
+        draw() {
+          const startX = -50, endX = width + 50;
+          const x0 = startX + this.progress * (endX - startX);
+          const baseY = this.startY + (this.endY - this.startY) * this.progress;
+          const wave  = Math.sin(this.progress * Math.PI * this.waveFreq + this.phase) * this.waveAmp;
+
+          let x = x0;
+          let y = baseY + wave;
+          let rot = this.rotation;
+
+          // Girdobon effekti markazda
+          const swirlEnd = this.swirlStart + this.swirlDuration;
+          if (this.progress >= this.swirlStart && this.progress <= swirlEnd) {
+            const u   = (this.progress - this.swirlStart) / this.swirlDuration;
+            const env = Math.sin(u * Math.PI);
+            const ang = u * Math.PI * 2 * this.swirlLoops * this.swirlDir;
+            x += -Math.sin(ang) * this.swirlRadius * env;
+            y += -Math.cos(ang) * this.swirlRadius * env * 0.72;
+            rot += ang * 0.5 * this.swirlDir;
+          }
+
+          // Kirish/chiqish solishi
+          let alpha = this.opacity;
+          if (this.progress < 0.05)  alpha *= this.progress / 0.05;
+          if (this.progress > 0.93)  alpha *= (1.1 - this.progress) / 0.17;
+          alpha = Math.max(0, Math.min(1, alpha));
+
+          ctx.save();
+          ctx.translate(x, y);
+          ctx.rotate(rot);
+          ctx.globalAlpha = alpha;
+
+          // Yumshoq soya
+          ctx.shadowColor  = 'rgba(255,120,120,0.35)';
+          ctx.shadowBlur   = 6;
+
+          ctx.font         = `${Math.round(this.size)}px serif`;
+          ctx.textAlign    = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(this.emoji, 0, 0);
+
+          ctx.restore();
+        }
+      }
+
+      // Zarrachalar soni
+      const count  = window.innerWidth < 600 ? 14 : (window.innerWidth < 1024 ? 20 : 28);
+      const fruits = Array.from({ length: count }, () => new FruitParticle(true));
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+        fruits.forEach(f => { f.update(); f.draw(); });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+
+    // Ensure all logo images load cleanly with base64 fallback
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.mycake-logo-img').forEach(img => {
+        if (img.naturalWidth === 0 && window.MYCAKE_LOGO_B64) {
+          img.src = window.MYCAKE_LOGO_B64;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
